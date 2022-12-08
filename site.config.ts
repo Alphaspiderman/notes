@@ -9,16 +9,16 @@ export default siteConfig({
 	rootNotionSpaceId: null,
 
 	// basic site info (required)
-	name: '',
-	domain: '',
-	author: '',
+	name: 'Just some notes',
+	domain: 'notes.alphaspiderman.dev',
+	author: 'Alphaspiderman',
 
 	// open graph metadata (optional)
-	description: '',
+	description: 'A Notion space for all of my notes.',
 
 	// social usernames (optional)
-	twitter: '',
-	github: '',
+	twitter: '_Alphaspiderman',
+	github: 'Alphaspiderman',
 	linkedin: '',
 	// mastodon: '#', // optional mastodon profile URL, provides link verification
 	// newsletter: '#', // optional newsletter URL
