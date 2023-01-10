@@ -105,11 +105,12 @@ export const isRedisEnabled: boolean =
 // (if you want to enable redis, only REDIS_HOST and REDIS_PASSWORD are required)
 // we recommend that you store these in a local `.env` file
 export const redisHost: string | null = getEnv('REDIS_HOST', null)
+export const redisPort: string = getEnv('REDIS_PORT', '6379')
 export const redisPassword: string | null = getEnv('REDIS_PASSWORD', null)
 export const redisUser: string = getEnv('REDIS_USER', 'default')
 export const redisUrl = getEnv(
 	'REDIS_URL',
-	`redis://${redisUser}:${redisPassword}@${redisHost}`
+	`redis://${redisUser}:${redisPassword}@${redisHost}:${redisPort}`
 )
 export const redisNamespace: string | null = getEnv(
 	'REDIS_NAMESPACE',
